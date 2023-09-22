@@ -1,0 +1,106 @@
+body {
+    background-image: url("../assets/home/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 1200px;
+    background-position: 0 -300px;
+}
+
+.main-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    transition: 150ms;
+}
+
+.main-search input {
+    height: 4rem;
+    width: 60rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-size: 2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.main-search:hover {
+    backdrop-filter: blur(8px);
+    transition: 150ms;
+}
+
+.discover-options {
+    display: flex;
+    background-color: white;
+    height: 2rem;
+    align-items: center;
+}
+
+.discover-options button {
+    font-size: 1rem;
+    background-color: blueviolet;
+    height: 100%;
+    border-style: none;
+    position: relative;
+    top: 0;
+    color: white;
+    width: 6rem;
+    transition: 300ms;
+}
+
+.discover-options button:hover {
+    top: -15px;
+    width: 7rem;
+    height: 3rem;
+    transition: 300ms;
+    background-color: rgb(158, 54, 255);
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem 0 1rem 0;
+    height: 30rem;
+}
+
+.horizontal-container .panel {
+    border: 3px solid #8b40c1;
+    border-radius: 5px;
+    width: 25rem;
+}
+
+.horizontal-container .panel .panel-card {
+    background-color: #8b40c1;
+    height: 25rem;
+    position: relative;
+    animation: GoUp 500ms;
+    display: inline;
+    
+}
+
+@keyframes GoUp {
+    0% {
+        top: 5rem;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.horizontal-container .panel .panel-card .card-item {
+    height: 6rem;
+    background-color: blue;
+    border-radius: 1rem;
+    margin: 10px;
+    padding: 5px 0 0 10px;
+    color: white;
+}
+
+#card-item-berlin {
+    background-image: url("../assets/home/berlin.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: 0 -400px;
+}

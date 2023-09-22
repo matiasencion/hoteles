@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c182ee;
+    padding: 0 1rem 0 1rem;
+    height: 5rem;
+}
+
+header img {
+    width: 200px;
+}
+
+.header-session-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.header-session-buttons button {
+    border-style: none;
+    width: 50px;
+    background-color: white;
+    border-radius: 10%;
+}
