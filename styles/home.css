@@ -109,6 +109,7 @@ body {
 .horizontal-container .panel .panel-card .card-item:hover {
     scale: 1.05;
     transition: 300ms;
+
 }
 
 .horizontal-container .panel .panel-card .card-item h3 {
@@ -116,6 +117,7 @@ body {
     backdrop-filter: blur(8px);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+    text-shadow: 0 0 1px black;
 }
 
 #card-item-berlin {
@@ -134,7 +136,12 @@ body {
 #card-item-montevideo {
     background-image: url("../assets/home/montevideo.jpg");
     background-repeat: no-repeat;
+    background-position: 0 -350px;
+}
 
+#card-item-madrid {
+    background-image: url("../assets/home/madrid.webp");
+    background-repeat: no-repeat;
     background-position: 0 -350px;
 }
 
@@ -159,6 +166,7 @@ body {
 .horizontal-container .panel .panel-card .card-item-checkbox:hover {
     scale: 1.1;
     transition: 300ms;
+    box-shadow: 0 0 5px black;
 }
 
 .horizontal-container .panel .panel-card .card-item-checkbox input:checked {

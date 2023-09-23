@@ -27,13 +27,15 @@ header img {
     width: 5rem;
     height: 2rem;
     background-color: transparent;
-    border: 3px solid white;;
     border-radius: 5px;
     font-size: 1rem;
-    color:white;
+    background-color: white;
+    color: black;
 }
 
 .header-session-buttons button:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(158, 54, 255);
+    color: white;
+    transition: 300ms;
+    scale: 1.1;
 }
