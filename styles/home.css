@@ -65,14 +65,22 @@ body {
 }
 
 .horizontal-container .panel {
-    border: 3px solid #8b40c1;
-    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0 0 5px black;
+    border: 3px solid #ffffff;
+    border-radius: 1rem;
     width: 25rem;
 }
 
+.horizontal-container .panel h2 {
+    color:white;
+    padding: 5px 0 5px 5px;
+    background-color: rgb(212, 169, 246);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
 .horizontal-container .panel .panel-card {
-    background-color: #8b40c1;
-    height: 25rem;
     position: relative;
     animation: GoUp 500ms;
     display: inline;
@@ -91,16 +99,72 @@ body {
 
 .horizontal-container .panel .panel-card .card-item {
     height: 6rem;
-    background-color: blue;
+    background-color: rgb(161, 161, 161);
     border-radius: 1rem;
     margin: 10px;
-    padding: 5px 0 0 10px;
     color: white;
+    transition: 300ms;
+}
+
+.horizontal-container .panel .panel-card .card-item:hover {
+    scale: 1.05;
+    transition: 300ms;
+}
+
+.horizontal-container .panel .panel-card .card-item h3 {
+    text-align: center;
+    backdrop-filter: blur(8px);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 #card-item-berlin {
     background-image: url("../assets/home/berlin.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-position: 0 -400px;
+    background-position: 0 -600px;
+}
+
+#card-item-londres {
+    background-image: url("../assets/home/londres.jpg");
+    background-repeat: no-repeat;
+    /*background-size: 100vw 100vh;*/
+    background-position: 0 -250px;
+}
+
+#card-item-montevideo {
+    background-image: url("../assets/home/montevideo.jpg");
+    background-repeat: no-repeat;
+
+    background-position: 0 -350px;
+}
+
+.horizontal-container .panel .panel-card .card-item-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5px;
+    height: 6rem;
+    width: 13rem;
+    background-color: rgb(161, 161, 161);
+    border-radius: 1rem;
+    margin: 10px;
+    color: white;
+    transition: 300ms;
+}
+
+.horizontal-container .panel .panel-card .card-item-checkbox input {
+    display: none;
+}
+
+.horizontal-container .panel .panel-card .card-item-checkbox:hover {
+    scale: 1.1;
+    transition: 300ms;
+}
+
+.horizontal-container .panel .panel-card .card-item-checkbox input:checked {
+    border: 3px solid rgb(0, 182, 0);
+}
+
+.horizontal-container .panel .panel-card .card-item-checkbox img {
+    width: 80px;
 }
