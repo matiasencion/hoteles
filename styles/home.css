@@ -2,7 +2,7 @@ body {
     background-image: url("../assets/home/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100vw 1200px;
+    background-size: 100% 1200px;
     background-position: 0 -300px;
 }
 
@@ -145,26 +145,29 @@ body {
 #card-item-berlin {
     background-image: url("../assets/home/berlin.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -600px;
+    background-size: 100% 230px;
+    background-position: 0 -20px;
 }
 
 #card-item-londres {
     background-image: url("../assets/home/londres.jpg");
     background-repeat: no-repeat;
-    /*background-size: 100vw 100vh;*/
-    background-position: 0 -250px;
+    background-position: 0 -20px;
+    background-size: 100% 220px;
 }
 
 #card-item-montevideo {
     background-image: url("../assets/home/montevideo.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -350px;
+    background-size: 100% 190px;
+    background-position: 0 -20px;
 }
 
 #card-item-madrid {
     background-image: url("../assets/home/madrid.webp");
     background-repeat: no-repeat;
-    background-position: 0 -350px;
+    background-size: 100% 220px;
+    background-position: 0 -20px;
 }
 
 .horizontal-container .panel .panel-card .card-item-checkbox {
