@@ -64,6 +64,11 @@ body {
     height: 30rem;
 }
 
+.horizontal-container img {
+    width: 8rem;
+    height: 8rem;
+    align-self: center;
+}
 .horizontal-container .panel {
     background-color: rgb(225, 225, 225);
     box-shadow: 0 0 5px black;
@@ -159,7 +164,7 @@ body {
     transition: 300ms;
 }
 
-.horizontal-container .panel .panel-card .card-item-checkbox input {
+.horizontal-container .panel .panel-card input {
     display: none;
 }
 
@@ -169,10 +174,31 @@ body {
     box-shadow: 0 0 5px black;
 }
 
-.horizontal-container .panel .panel-card .card-item-checkbox input:checked {
-    border: 3px solid rgb(0, 182, 0);
-}
-
 .horizontal-container .panel .panel-card .card-item-checkbox img {
     width: 80px;
+    height: 80px;
+}
+
+#option-checkbox-1:checked + #option-label-1 {
+    border: 3px solid rgb(158, 54, 255);
+    background-color: rgb(212, 169, 246);
+    box-shadow: 0 0 5px black;
+}
+
+#option-checkbox-2:checked + #option-label-2 {
+    border: 3px solid rgb(158, 54, 255);
+    background-color: rgb(212, 169, 246);
+    box-shadow: 0 0 5px black;
+}
+
+#option-checkbox-3:checked + #option-label-3 {
+    border: 3px solid rgb(158, 54, 255);
+    background-color: rgb(212, 169, 246);
+    box-shadow: 0 0 5px black;
+}
+
+#option-checkbox-4:checked + #option-label-4 {
+    border: 3px solid rgb(158, 54, 255);
+    background-color: rgb(212, 169, 246);
+    box-shadow: 0 0 5px black;
 }
