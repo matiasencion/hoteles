@@ -91,7 +91,7 @@ body {
     /*background-color: rgb(158, 54, 255);*/
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    background-image: linear-gradient(45deg, #e178f3, #b366ff);
+    background-image: linear-gradient(45deg, #e178f3, #954cde);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -122,14 +122,15 @@ body {
     border-radius: 1rem;
     margin: 10px;
     color: white;
-    transition: 300ms;
+    transition: 200ms;
 }
+
+
 
 .horizontal-container .panel .panel-card .card-item:hover {
     height: 9rem;
-    transition: 300ms;
     box-shadow: 0 0px 3px black;
-
+    transition: 300ms;
 }
 
 .horizontal-container .panel .panel-card .card-item h3 {
@@ -138,6 +139,7 @@ body {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     text-shadow: 0 0 1px black;
+    padding: 2px 0 2px 0;
 }
 
 #card-item-berlin {
@@ -180,7 +182,7 @@ body {
 }
 
 .horizontal-container .panel .panel-card input {
-    display: none;
+   display: none;
 }
 
 .horizontal-container .panel .panel-card .card-item-checkbox:hover {
@@ -213,7 +215,59 @@ body {
 }
 
 #option-checkbox-4:checked + #option-label-4 {
-    border: 3px solid rgb(158, 54, 255);
-    background-color: rgb(212, 169, 246);
+    border: 3px solid #9e36ff;
+    background-color: #d4a9f6;
     box-shadow: 0 0 5px black;
 }
+
+#city-checkbox-berlin:checked + #card-label-berlin div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+#city-checkbox-londres:checked + #card-label-londres div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+#city-checkbox-montevideo:checked + #card-label-montevideo div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+#city-checkbox-madrid:checked + #card-label-madrid div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+/*#city-checkbox-berlin:checked + #card-label-berlin h3 {
+    
+    background-color: rgb(212, 169, 246);
+    
+}
+
+#city-checkbox-londres:checked + #card-label-londres h3 {
+    
+    background-color: rgb(212, 169, 246);
+    
+}
+
+#city-checkbox-montevideo:checked + #card-label-montevideo h3 {
+    
+    background-color: rgb(212, 169, 246);
+    
+}
+
+#city-checkbox-madrid:checked + #card-label-madrid h3 {
+
+    background-color: rgb(212, 169, 246);
+    
+}*/
