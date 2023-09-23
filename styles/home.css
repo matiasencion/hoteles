@@ -56,33 +56,47 @@ body {
     background-color: rgb(158, 54, 255);
 }
 
+.main-title {
+    background-color: white;
+}
+
+.main-title h1 {
+    padding: 2rem 0 1rem 0.5rem;
+    font-family: Lato, black;
+    font-size: 3rem;
+    color: #000000;
+}
 .horizontal-container {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    padding: 1rem 0 1rem 0;
-    height: 30rem;
+    padding: 1rem 2rem 1rem 2rem;
+    height: 34rem;
 }
 
 .horizontal-container img {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
     align-self: center;
 }
 .horizontal-container .panel {
-    background-color: rgb(225, 225, 225);
-    box-shadow: 0 0 5px black;
-    border: 3px solid #ffffff;
     border-radius: 1rem;
-    width: 25rem;
+    width: 26rem;
 }
 
 .horizontal-container .panel h2 {
-    color:white;
     padding: 5px 0 5px 5px;
-    background-color: rgb(212, 169, 246);
+    font-family: Lato, black;
+    font-size: 33px;
+    /*background-color: rgb(158, 54, 255);*/
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+    background-image: linear-gradient(45deg, #e178f3, #b366ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .horizontal-container .panel .panel-card {
@@ -112,8 +126,9 @@ body {
 }
 
 .horizontal-container .panel .panel-card .card-item:hover {
-    scale: 1.05;
+    height: 9rem;
     transition: 300ms;
+    box-shadow: 0 0px 3px black;
 
 }
 
@@ -157,10 +172,10 @@ body {
     padding: 5px;
     height: 6rem;
     width: 13rem;
-    background-color: rgb(161, 161, 161);
+    border: 3px solid black;
     border-radius: 1rem;
     margin: 10px;
-    color: white;
+    color: black;
     transition: 300ms;
 }
 
