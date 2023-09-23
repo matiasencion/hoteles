@@ -102,8 +102,10 @@ body {
 .horizontal-container .panel .panel-card {
     position: relative;
     animation: GoUp 500ms;
-    display: inline;
-    
+    max-width: 26rem;
+    max-height: 30rem;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 @keyframes GoUp {
@@ -170,13 +172,35 @@ body {
     background-position: 0 -20px;
 }
 
+#card-item-paris {
+    background-image: url("../assets/home/paris.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    background-position: 0 -50px;
+}
+
+#card-item-newyork {
+    background-image: url("../assets/home/newyork.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+    background-position: 0 -20px;
+}
+
+#card-item-sidney {
+    background-image: url("../assets/home/sydney.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+    background-position: 0 -20px;
+}
+
+
 .horizontal-container .panel .panel-card .card-item-checkbox {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 5px;
     height: 6rem;
-    width: 13rem;
+    width: 100%;
     border: 3px solid black;
     border-radius: 1rem;
     margin: 10px;
@@ -200,26 +224,44 @@ body {
 }
 
 #option-checkbox-1:checked + #option-label-1 {
-    border: 3px solid rgb(158, 54, 255);
-    background-color: rgb(212, 169, 246);
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
     box-shadow: 0 0 5px black;
 }
 
 #option-checkbox-2:checked + #option-label-2 {
     border: 3px solid rgb(158, 54, 255);
-    background-color: rgb(212, 169, 246);
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
     box-shadow: 0 0 5px black;
 }
 
 #option-checkbox-3:checked + #option-label-3 {
     border: 3px solid rgb(158, 54, 255);
-    background-color: rgb(212, 169, 246);
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
     box-shadow: 0 0 5px black;
 }
 
 #option-checkbox-4:checked + #option-label-4 {
     border: 3px solid #9e36ff;
-    background-color: #d4a9f6;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#option-checkbox-5:checked + #option-label-5 {
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#option-checkbox-6:checked + #option-label-6 {
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
     box-shadow: 0 0 5px black;
 }
 
@@ -251,6 +293,28 @@ body {
     
 }
 
+#city-checkbox-paris:checked + #card-label-paris div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+#city-checkbox-newyork:checked + #card-label-newyork div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+#city-checkbox-sidney:checked + #card-label-sidney div{
+    transition: 200ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff;
+    
+}
+
+
 .button-type-1 {
     width: 100%;
     height: 4rem;
@@ -258,13 +322,80 @@ body {
     font-size: 2rem;
     border-radius: 1rem;
     border-style: none;
-    background-image: linear-gradient(to right, #e178f3, #954cde, #e178f3);
+    background-image: linear-gradient(to right, #e4c2ff, #954cde, #e4c2ff);
     background-size: 200%;
     background-position: right center;
     transition: 300ms;
+    font-family: Lato, black;
 }
 
 .button-type-1:hover {
     background-position: left center;
     transition: 300ms;
+}
+
+
+
+#price-checkbox-1:checked + #price-label-1 {
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#price-checkbox-2:checked + #price-label-2 {
+    border: 3px solid rgb(158, 54, 255);
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#price-checkbox-3:checked + #price-label-3 {
+    border: 3px solid rgb(158, 54, 255);
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#price-checkbox-4:checked + #price-label-4 {
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+#price-checkbox-5:checked + #price-label-5 {
+    border: 3px solid #9e36ff;
+    background-image: linear-gradient(45deg,#9e36ff,#e4c2ff);
+    background-size: auto;
+    box-shadow: 0 0 5px black;
+}
+
+.horizontal-container .panel .price-panel-card .card-item-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5px;
+    height: 3rem;
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 1rem;
+    margin: 10px;
+    color: black;
+    transition: 300ms;
+}
+
+#price-label-5 {
+    margin-left: 2.5rem;
+}
+
+.date-input {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.date-input label {
+
+    font-size: 1rem;
 }

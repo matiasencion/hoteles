@@ -60,6 +60,24 @@
                             <h3>Madrid</h3>
                         </div>
                     </label>
+                    <input type="checkbox" id="city-checkbox-paris">
+                    <label for="city-checkbox-paris" id="card-label-paris">
+                        <div class="card-item" id="card-item-paris">
+                            <h3>Paris</h3>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="city-checkbox-newyork">
+                    <label for="city-checkbox-newyork" id="card-label-newyork">
+                        <div class="card-item" id="card-item-newyork">
+                            <h3>New York</h3>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="city-checkbox-sidney">
+                    <label for="city-checkbox-sidney" id="card-label-sidney">
+                        <div class="card-item" id="card-item-sidney">
+                            <h3>Sidney</h3>
+                        </div>
+                    </label>
                 </div>
             </div>
             <img src="assets/home/arrow.png"/>
@@ -90,16 +108,53 @@
                             <h3>Piscina</h3>
                         </label>
                     </div>
+                    <div style="display: flex;">
+                        <input  type="checkbox" id="option-checkbox-5">
+                        <label for="option-checkbox-5" class="card-item-checkbox" id="option-label-5">
+                            <img src="assets/home/cama.png" alt="cama">
+                            <h3>3 camas o más</h3>
+                        </label>
+                        <input  type="checkbox" id="option-checkbox-6">
+                        <label for="option-checkbox-6" class="card-item-checkbox" id="option-label-6">
+                            <img src="assets/home/parking.png" alt="parking">
+                            <h3>Parking</h3>
+                        </label>
+                    </div>
                 </div>
             </div>
             <img src="assets/home/arrow.png"/>
             <div class="panel">
                 <h2>Cuánto te gustaría gastar?</h2>
-                <div class="slide-bar">
-                    <input type="range" min="1" max="10000" value="5000" class="slider">
+                <div class="price-panel-card panel-card" id="horizontal-prices">
+                    <div style="display: flex;">
+                        <input  type="checkbox" id="price-checkbox-1">
+                        <label for="price-checkbox-1" class="card-item-checkbox" id="price-label-1">
+                            <h3>Menos de $1000</h3>
+                        </label>
+                        <input  type="checkbox" id="price-checkbox-2">
+                        <label for="price-checkbox-2" class="card-item-checkbox" id="price-label-2">
+                            <h3>$1000-$3000</h3>
+                        </label>
+                    </div>
+                    <div style="display: flex;">
+                        <input  type="checkbox" id="price-checkbox-3">
+                        <label for="price-checkbox-3" class="card-item-checkbox" id="price-label-3">
+                            <h3>$3000-$5000</h3>
+                        </label>
+                        <input  type="checkbox" id="price-checkbox-4">
+                        <label for="price-checkbox-4" class="card-item-checkbox" id="price-label-4">
+                            <h3>$5000-$10000</h3>
+                        </label>
+                    </div>
+                    <div style="display: flex;">
+                        <input  type="checkbox" id="price-checkbox-5">
+                        <label for="price-checkbox-5" class="card-item-checkbox" id="price-label-5">
+                            <h3>Más de $10000</h3>
+                        </label>
+                    </div>
                 </div>
                 <h2>Y... cuánto pensás estar?</h2>
-                <div class="number-input-bar">
+                <div class="date-input">
                     <label for="start-date-input">Desde: </label>
                     <input type="date" id="start-date-input">
                     <label for="end-date-input">Hasta: </label>
@@ -111,9 +166,10 @@
     </div>
     <footer>
         <ul>
-            <li>Contacto: 098 422 119</li>
-            <li>Ubicación: Calle 10, Canelones</li>
+            <li>Email:matiassencio@gmai.com</li>
+            <li></li>
         </ul>
     </footer>
+    <script src="scripts/home.js"></script>
 </body>
 </html>
