@@ -251,26 +251,20 @@ body {
     
 }
 
-/*#city-checkbox-berlin:checked + #card-label-berlin h3 {
-    
-    background-color: rgb(212, 169, 246);
-    
+.button-type-1 {
+    width: 100%;
+    height: 4rem;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-image: linear-gradient(to right, #e178f3, #954cde, #e178f3);
+    background-size: 200%;
+    background-position: right center;
+    transition: 300ms;
 }
 
-#city-checkbox-londres:checked + #card-label-londres h3 {
-    
-    background-color: rgb(212, 169, 246);
-    
+.button-type-1:hover {
+    background-position: left center;
+    transition: 300ms;
 }
-
-#city-checkbox-montevideo:checked + #card-label-montevideo h3 {
-    
-    background-color: rgb(212, 169, 246);
-    
-}
-
-#city-checkbox-madrid:checked + #card-label-madrid h3 {
-
-    background-color: rgb(212, 169, 246);
-    
-}*/
