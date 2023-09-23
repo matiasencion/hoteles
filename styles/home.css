@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 20vh;
     width: 100%;
-    transition: 150ms;
+    transition: 300ms;
 }
 
 .main-search input {
@@ -24,9 +24,9 @@ body {
     padding: 0 1rem 0 1rem;
 }
 
-.main-search:hover {
-    backdrop-filter: blur(8px);
-    transition: 150ms;
+.main-search:hover{
+    backdrop-filter:blur(8px) ;
+    transition: 300ms;
 }
 
 .discover-options {
@@ -327,11 +327,15 @@ body {
     background-position: right center;
     transition: 300ms;
     font-family: Lato, black;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 .button-type-1:hover {
     background-position: left center;
     transition: 300ms;
+    box-shadow: 0 0 5px black;
+    border: 3px solid #9e36ff; 
 }
 
 
@@ -391,11 +395,15 @@ body {
 
 .date-input {
     display: flex;
-    gap: 1rem;
-    margin: 2rem;
+    margin: 1rem;
+}
+
+.date-input input{
+    margin: 0 5px 0 5px;
 }
 
 .date-input label {
-
-    font-size: 1rem;
+    font-family: Lato, bold;
+    font-weight: 600;
+    font-size: 22px;
 }
